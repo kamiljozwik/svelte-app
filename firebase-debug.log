@@ -1,0 +1,235 @@
+[debug] [2023-07-14T18:20:33.862Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T18:20:33.864Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-14T18:20:33.865Z] CLI Version:   12.4.4
+[debug] [2023-07-14T18:20:33.865Z] Platform:      win32
+[debug] [2023-07-14T18:20:33.865Z] Node Version:  v16.15.0
+[debug] [2023-07-14T18:20:33.865Z] Time:          Fri Jul 14 2023 20:20:33 GMT+0200 (Central European Summer Time)
+[debug] [2023-07-14T18:20:33.866Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T18:20:33.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T18:20:33.928Z] > authorizing via signed-in user (kamiljozwikpl@gmail.com)
+[debug] [2023-07-14T18:20:33.928Z] [iam] checking project fireship-svelte-df3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-14T18:20:33.930Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions [none]
+[debug] [2023-07-14T18:20:33.930Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions x-goog-quota-user=projects/fireship-svelte-df3ac
+[debug] [2023-07-14T18:20:33.930Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:20:34.765Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions 200
+[debug] [2023-07-14T18:20:34.765Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:20:34.766Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac [none]
+[debug] [2023-07-14T18:20:35.154Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac 200
+[debug] [2023-07-14T18:20:35.154Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac {"projectId":"fireship-svelte-df3ac","projectNumber":"201337120049","displayName":"fireship-svelte","name":"projects/fireship-svelte-df3ac","resources":{"hostingSite":"fireship-svelte-df3ac","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_2c372302-7ad8-41e5-bc98-3d0f5268fb51"}
+[debug] [2023-07-14T18:20:39.730Z] defaultcredentials: writing to file C:\Users\Kamil Jozwik\AppData\Roaming\firebase\kamiljozwikpl_gmail_com_application_default_credentials.json
+[debug] [2023-07-14T18:20:39.735Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites pageToken=&pageSize=10
+[debug] [2023-07-14T18:20:40.784Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:20:40.784Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:20:40.785Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 
+[debug] [2023-07-14T18:20:41.800Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:20:41.801Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:20:41.801Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config [none]
+[debug] [2023-07-14T18:20:42.784Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config 200
+[debug] [2023-07-14T18:20:42.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config {"projectId":"fireship-svelte-df3ac","appId":"1:201337120049:web:bb5c8d5d049ee0f073bc10","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBkq3UtECnSmISdX0rHVt5m9Hf_rKabBDw","authDomain":"fireship-svelte-df3ac.firebaseapp.com","messagingSenderId":"201337120049"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-14T18:21:27.122Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at execSync (node:child_process:899:15)
+    at prepareFrameworks (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-14T18:26:09.724Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T18:26:09.726Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-14T18:26:09.727Z] CLI Version:   12.4.4
+[debug] [2023-07-14T18:26:09.727Z] Platform:      win32
+[debug] [2023-07-14T18:26:09.727Z] Node Version:  v16.15.0
+[debug] [2023-07-14T18:26:09.728Z] Time:          Fri Jul 14 2023 20:26:09 GMT+0200 (Central European Summer Time)
+[debug] [2023-07-14T18:26:09.728Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T18:26:09.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T18:26:09.785Z] > authorizing via signed-in user (kamiljozwikpl@gmail.com)
+[debug] [2023-07-14T18:26:09.785Z] [iam] checking project fireship-svelte-df3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-14T18:26:09.787Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions [none]
+[debug] [2023-07-14T18:26:09.787Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions x-goog-quota-user=projects/fireship-svelte-df3ac
+[debug] [2023-07-14T18:26:09.788Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:26:10.900Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions 200
+[debug] [2023-07-14T18:26:10.901Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:26:10.901Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac [none]
+[debug] [2023-07-14T18:26:11.274Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac 200
+[debug] [2023-07-14T18:26:11.275Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac {"projectId":"fireship-svelte-df3ac","projectNumber":"201337120049","displayName":"fireship-svelte","name":"projects/fireship-svelte-df3ac","resources":{"hostingSite":"fireship-svelte-df3ac","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_2c372302-7ad8-41e5-bc98-3d0f5268fb51"}
+[debug] [2023-07-14T18:26:15.919Z] defaultcredentials: writing to file C:\Users\Kamil Jozwik\AppData\Roaming\firebase\kamiljozwikpl_gmail_com_application_default_credentials.json
+[debug] [2023-07-14T18:26:15.933Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites pageToken=&pageSize=10
+[debug] [2023-07-14T18:26:17.019Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:26:17.019Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:26:17.020Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 
+[debug] [2023-07-14T18:26:18.036Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:26:18.037Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:26:18.037Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config [none]
+[debug] [2023-07-14T18:26:19.126Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config 200
+[debug] [2023-07-14T18:26:19.127Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config {"projectId":"fireship-svelte-df3ac","appId":"1:201337120049:web:bb5c8d5d049ee0f073bc10","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBkq3UtECnSmISdX0rHVt5m9Hf_rKabBDw","authDomain":"fireship-svelte-df3ac.firebaseapp.com","messagingSenderId":"201337120049"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-14T18:26:59.564Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at execSync (node:child_process:899:15)
+    at prepareFrameworks (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-14T18:31:21.117Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T18:31:21.119Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-14T18:31:21.119Z] CLI Version:   12.4.4
+[debug] [2023-07-14T18:31:21.120Z] Platform:      win32
+[debug] [2023-07-14T18:31:21.120Z] Node Version:  v16.15.0
+[debug] [2023-07-14T18:31:21.120Z] Time:          Fri Jul 14 2023 20:31:21 GMT+0200 (Central European Summer Time)
+[debug] [2023-07-14T18:31:21.120Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T18:31:21.180Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T18:31:21.181Z] > authorizing via signed-in user (kamiljozwikpl@gmail.com)
+[debug] [2023-07-14T18:31:21.181Z] [iam] checking project fireship-svelte-df3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-14T18:31:21.183Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions [none]
+[debug] [2023-07-14T18:31:21.184Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions x-goog-quota-user=projects/fireship-svelte-df3ac
+[debug] [2023-07-14T18:31:21.184Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:31:22.076Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions 200
+[debug] [2023-07-14T18:31:22.076Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:31:22.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac [none]
+[debug] [2023-07-14T18:31:22.422Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac 200
+[debug] [2023-07-14T18:31:22.422Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac {"projectId":"fireship-svelte-df3ac","projectNumber":"201337120049","displayName":"fireship-svelte","name":"projects/fireship-svelte-df3ac","resources":{"hostingSite":"fireship-svelte-df3ac","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_2c372302-7ad8-41e5-bc98-3d0f5268fb51"}
+[debug] [2023-07-14T18:31:26.869Z] defaultcredentials: writing to file C:\Users\Kamil Jozwik\AppData\Roaming\firebase\kamiljozwikpl_gmail_com_application_default_credentials.json
+[debug] [2023-07-14T18:31:26.881Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites pageToken=&pageSize=10
+[debug] [2023-07-14T18:31:28.389Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:31:28.389Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:31:28.389Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 
+[debug] [2023-07-14T18:31:29.594Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:31:29.595Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:31:29.595Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config [none]
+[debug] [2023-07-14T18:31:30.509Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config 200
+[debug] [2023-07-14T18:31:30.509Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config {"projectId":"fireship-svelte-df3ac","appId":"1:201337120049:web:bb5c8d5d049ee0f073bc10","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBkq3UtECnSmISdX0rHVt5m9Hf_rKabBDw","authDomain":"fireship-svelte-df3ac.firebaseapp.com","messagingSenderId":"201337120049"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-14T18:32:15.554Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at execSync (node:child_process:899:15)
+    at prepareFrameworks (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-14T18:32:36.439Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T18:32:36.441Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --force
+[debug] [2023-07-14T18:32:36.441Z] CLI Version:   12.4.4
+[debug] [2023-07-14T18:32:36.441Z] Platform:      win32
+[debug] [2023-07-14T18:32:36.442Z] Node Version:  v16.15.0
+[debug] [2023-07-14T18:32:36.442Z] Time:          Fri Jul 14 2023 20:32:36 GMT+0200 (Central European Summer Time)
+[debug] [2023-07-14T18:32:36.442Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T18:32:36.499Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T18:32:36.500Z] > authorizing via signed-in user (kamiljozwikpl@gmail.com)
+[debug] [2023-07-14T18:32:36.500Z] [iam] checking project fireship-svelte-df3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-14T18:32:36.502Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions [none]
+[debug] [2023-07-14T18:32:36.502Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions x-goog-quota-user=projects/fireship-svelte-df3ac
+[debug] [2023-07-14T18:32:36.502Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:32:37.841Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions 200
+[debug] [2023-07-14T18:32:37.842Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:32:37.843Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac [none]
+[debug] [2023-07-14T18:32:38.184Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac 200
+[debug] [2023-07-14T18:32:38.185Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac {"projectId":"fireship-svelte-df3ac","projectNumber":"201337120049","displayName":"fireship-svelte","name":"projects/fireship-svelte-df3ac","resources":{"hostingSite":"fireship-svelte-df3ac","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_2c372302-7ad8-41e5-bc98-3d0f5268fb51"}
+[debug] [2023-07-14T18:32:42.839Z] defaultcredentials: writing to file C:\Users\Kamil Jozwik\AppData\Roaming\firebase\kamiljozwikpl_gmail_com_application_default_credentials.json
+[debug] [2023-07-14T18:32:42.843Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites pageToken=&pageSize=10
+[debug] [2023-07-14T18:32:44.060Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:32:44.060Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:32:44.061Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 
+[debug] [2023-07-14T18:32:45.313Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:32:45.313Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:32:45.314Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config [none]
+[debug] [2023-07-14T18:32:46.514Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config 200
+[debug] [2023-07-14T18:32:46.515Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config {"projectId":"fireship-svelte-df3ac","appId":"1:201337120049:web:bb5c8d5d049ee0f073bc10","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBkq3UtECnSmISdX0rHVt5m9Hf_rKabBDw","authDomain":"fireship-svelte-df3ac.firebaseapp.com","messagingSenderId":"201337120049"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-14T18:33:10.927Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at execSync (node:child_process:899:15)
+    at prepareFrameworks (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-14T18:37:35.547Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T18:37:35.548Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-14T18:37:35.549Z] CLI Version:   12.4.4
+[debug] [2023-07-14T18:37:35.549Z] Platform:      win32
+[debug] [2023-07-14T18:37:35.549Z] Node Version:  v16.15.0
+[debug] [2023-07-14T18:37:35.550Z] Time:          Fri Jul 14 2023 20:37:35 GMT+0200 (Central European Summer Time)
+[debug] [2023-07-14T18:37:35.550Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T18:37:35.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T18:37:35.610Z] > authorizing via signed-in user (kamiljozwikpl@gmail.com)
+[debug] [2023-07-14T18:37:35.610Z] [iam] checking project fireship-svelte-df3ac for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-14T18:37:35.612Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions [none]
+[debug] [2023-07-14T18:37:35.612Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions x-goog-quota-user=projects/fireship-svelte-df3ac
+[debug] [2023-07-14T18:37:35.612Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:37:36.592Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions 200
+[debug] [2023-07-14T18:37:36.592Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-svelte-df3ac:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T18:37:36.593Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac [none]
+[debug] [2023-07-14T18:37:37.100Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac 200
+[debug] [2023-07-14T18:37:37.100Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac {"projectId":"fireship-svelte-df3ac","projectNumber":"201337120049","displayName":"fireship-svelte","name":"projects/fireship-svelte-df3ac","resources":{"hostingSite":"fireship-svelte-df3ac","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_2c372302-7ad8-41e5-bc98-3d0f5268fb51"}
+[debug] [2023-07-14T18:37:41.671Z] defaultcredentials: writing to file C:\Users\Kamil Jozwik\AppData\Roaming\firebase\kamiljozwikpl_gmail_com_application_default_credentials.json
+[debug] [2023-07-14T18:37:41.675Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites pageToken=&pageSize=10
+[debug] [2023-07-14T18:37:42.762Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:37:42.762Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:37:42.763Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 
+[debug] [2023-07-14T18:37:43.810Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites 200
+[debug] [2023-07-14T18:37:43.810Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/sites {"sites":[{"name":"projects/fireship-svelte-df3ac/sites/fireship-svelte-df3ac","defaultUrl":"https://fireship-svelte-df3ac.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-14T18:37:43.811Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config [none]
+[debug] [2023-07-14T18:37:44.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config 200
+[debug] [2023-07-14T18:37:44.730Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-svelte-df3ac/webApps/-/config {"projectId":"fireship-svelte-df3ac","appId":"1:201337120049:web:bb5c8d5d049ee0f073bc10","storageBucket":"fireship-svelte-df3ac.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBkq3UtECnSmISdX0rHVt5m9Hf_rKabBDw","authDomain":"fireship-svelte-df3ac.firebaseapp.com","messagingSenderId":"201337120049"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-14T18:38:29.579Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at execSync (node:child_process:899:15)
+    at prepareFrameworks (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\Kamil Jozwik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
