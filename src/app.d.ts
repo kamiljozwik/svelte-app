@@ -3,7 +3,10 @@
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			// piece of server side state, we can access from any server side endpoints
+			userID: string | null;
+		}
 		// interface PageData {}
 		// interface Platform {}
 	}
