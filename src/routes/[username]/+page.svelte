@@ -15,13 +15,10 @@
 		@{data.username}
 	</h1>
 
-	<div>
-		<a href={`${data.username}/bio`}>BIO</a>
-	</div>
-
 	<img src={data.photoURL ?? '/user.png'} alt="photoURL" width="256" class="mx-auto" />
 
-	<p class="text-xl my-8">{data.bio ?? 'no bio yet...'}</p>
+	<p class="text-xl my-8">Bio: {data.bio ?? 'no bio yet...'}</p>
+	<a href={`/${data.username}/bio`} class="btn btn-primary mb-6">Edit bio</a>
 	<ul class="list-none">
 		{#each data.links as item}
 			<!-- {@debug item} -->
